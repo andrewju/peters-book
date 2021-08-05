@@ -6,14 +6,14 @@
 }
 
 <div class="card">
-	<h5 class="card-header">@Model.ElementName</h5>
+	<h5 class="card-header" style="font-family:Courier New, Courier, monospace">@Model.ElementName</h5>
 	<div class="card-body">
-		<h3 class="card-title" style="font-family:'Bookman Old Style'">@Model.Title</h3>
+		<h3 class="card-title"><b>@Model.Title</b></h3>
 		<div class="card-text">
 			@foreach (var line in Model.Lines)
 			{
 				var linkText = link + index;
-				<p><a data-toggle="collapse" href="#@linkText" style="font-family:'Book Antiqua'; font-size:larger">@line.Line</a></p>
+				<p><a data-toggle="collapse" href="#@linkText" style="font-family:Courier New, Courier, monospace; font-size:larger">@line.Line</a></p>
 				<div class="collapse" id="@linkText">
 					<div class="card card-body">
 						@line.Description
