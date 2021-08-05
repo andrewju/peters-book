@@ -1,0 +1,936 @@
+﻿@page
+@model IndexModel
+@{
+	ViewData["Title"] = "Home page";
+}
+
+<style>
+
+	.element {
+		border: 1px dotted #999;
+	}
+
+	table {
+		display: block;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+</style>
+
+
+<div class="text-center">
+	<table>
+		<tbody>
+			<tr>
+				<td class="element">
+					<pre>
+1
+H
+1.01
+</pre>
+				</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="element">
+					<pre>
+2
+He
+4.00
+</pre>
+				</td>
+			</tr>
+			<tr>
+				<td class="element">
+					<a href="/poem">
+						<pre>
+3
+Li
+6.94
+</pre>
+					</a>
+				</td>
+				<td class="element">
+					<pre>
+4
+Be
+9.01
+</pre>
+				</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="element">
+					<pre>
+5
+B
+10.81
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+6
+C
+12.01
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+7
+N
+14.01
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+8
+O
+16.00
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+9
+F
+19.00
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+10
+Ne
+20.18
+</pre>
+				</td>
+			</tr>
+			<tr>
+				<td class="element">
+					<pre>
+11
+Na
+22.99
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+12
+Mg
+24.31
+</pre>
+				</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td class="element">
+					<pre>
+13
+Al
+26.98
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+14
+Si
+28.09
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+15
+P
+30.97
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+16
+S
+32.07
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+17
+Cl
+35.45
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+18
+Ar
+39.95
+</pre>
+				</td>
+			</tr>
+			<tr>
+				<td class="element">
+					<pre>
+19
+K
+39.10
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+20
+Ca
+40.08
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+21
+Sc
+44.96
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+22
+Ti
+47.88
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+23
+V
+50.94
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+24
+Cr
+52.00
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+25
+Mn
+54.94
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+26
+Fe
+55.85
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+27
+Co
+58.93
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+28
+Ni
+58.69
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+29
+Cu
+63.55
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+30
+Zn
+65.39
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+31
+Ga
+69.72
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+32
+Ge
+72.61
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+33
+As
+74.92
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+34
+Se
+78.97
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+35
+Br
+79.90
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+36
+Kr
+83.80
+</pre>
+				</td>
+			</tr>
+			<tr>
+				<td class="element">
+					<pre>
+37
+Rb
+85.47
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+38
+Sr
+87.62
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+39
+Y
+88.91
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+40
+Zr
+91.22
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+41
+Nb
+92.91
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+42
+Mo
+95.95
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+43
+Tc
+98.01
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+44
+Ru
+101.07
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+45
+Rh
+102.91
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+46
+Pd
+106.42
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+47
+Ag
+107.87
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+48
+Cd
+112.41
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+49
+In
+114.82
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+50
+Sn
+118.71
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+51
+Sb
+121.76
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+52
+Te
+127.60
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+53
+I
+126.90
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+54
+Xe
+131.29
+</pre>
+				</td>
+			</tr>
+			<tr>
+				<td class="element">
+					<pre>
+55
+Cs
+132.91
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+56
+Ba
+137.33
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+57
+La
+138.91
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+73
+Hf
+178.49
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+73
+Ta
+180.95
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+74
+W
+183.85
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+75
+Re
+186.21
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+76
+Os
+190.23
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+77
+Ir
+192.22
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+78
+Pt
+195.08
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+79
+Au
+196.97
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+80
+Hg
+200.59
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+81
+Tl
+204.38
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+82
+Pb
+207.20
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+83
+Bi
+208.91
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+84
+Po
+208.88
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+85
+At
+209.99
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+86
+Rn
+222.02
+</pre>
+				</td>
+			</tr>
+			<tr>
+				<td class="element">
+					<pre>
+87
+Fr
+223.01
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+88
+Ra
+226.03
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+89
+Ac
+(227)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+104
+Rf
+(261)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+105
+Db
+(262)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+106
+Sg
+(263)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+107
+Bh
+(262)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+108
+Hs
+(265)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+109
+Mt
+(266)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+110
+Ds
+(281)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+111
+Rg
+(272)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+112
+Cn
+(285)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+113
+Nh
+(286)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+114
+Fl
+(289)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+115
+Mc
+(289)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+116
+Lv
+(293)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+117
+Ts
+(294)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+118
+Og
+(294)
+</pre>
+				</td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td class="element">
+					<pre>
+58
+Ce
+140.11
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+59
+Pr
+140.91
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+60
+Nd
+144.24
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+61
+Pm
+(145)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+62
+Sm
+150.36
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+63
+Eu
+151.96
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+64
+Gd
+157.25
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+65
+Tb
+158.93
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+66
+Dy
+162.50
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+67
+Ho
+164.93
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+68
+Er
+167.26
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+69
+Tm
+168.93
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+70
+Yb
+173.04
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+71
+Lu
+174.97
+</pre>
+				</td>
+				<td> </td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td class="element">
+					<pre>
+90
+Th
+232.04
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+91
+Pa
+231.04
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+92
+U
+238.03
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+93
+Np
+(237)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+94
+Pu
+(244)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+95
+Am
+(243)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+96
+Cm
+(247)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+97
+Bk
+(247)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+98
+Cf
+(251)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+99
+Es
+(252)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+100
+Fm
+(257)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+101
+Md
+(258)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+102
+No
+(259)
+</pre>
+				</td>
+				<td class="element">
+					<pre>
+103
+Lr
+(262)
+</pre>
+				</td>
+				<td> </td>
+				<td> </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
